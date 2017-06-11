@@ -1,0 +1,10 @@
+这里记录的都是网络编程中涉及到的一些细节.
+
+
+doc                        ---            code
+
+1. 读写函数的封装.md                      none
+
+2. IO函数总结.md                          none
+
+3. Socket函数集合.md                      none
