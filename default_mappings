@@ -14,3 +14,5 @@ doc                        ---            code
 5. epoll模型代码                          code/epoll, code/epoll_et
 
 6. 心跳检测                               none
+
+7. 扩展epoll模型(libevent核心)            code/epoll_extend
