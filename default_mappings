@@ -16,3 +16,12 @@ doc                        ---            code
 6. 心跳检测                               none
 
 7. 扩展epoll模型(libevent核心)            code/epoll_extend
+
+
+
+
+
+8. udp(c-s,broadcast, multi-cast)         code/udp_*
+
+9. 多进程模型                             code/multi_process
+
