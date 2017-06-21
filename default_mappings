@@ -26,3 +26,5 @@ doc                        ---            code
 9. 多进程模型                             code/multi_process
 
 10. 多线程模型                            code/multi_thread
+
+11. 本地套接字                            code/unix_domain
