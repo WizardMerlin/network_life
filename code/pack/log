@@ -1,0 +1,69 @@
+$ make
+g++ -o server.o server.cpp
+g++ -o client.o client.cpp
+客户端模拟发送数据
+$ ./client.o 
+emulate_subpackage...
+send data size: 00000088
+send data: This i
+send data: s a te
+send data: st cas
+send data: e for
+send data: client
+send data: send
+send data: subpac
+send data: kage d
+send data: ata. d
+send data: ata is
+send data: not s
+send data: end co
+send data: mplete
+send data: at on
+send data: ce.
+emulate_adheringpackage...
+send complete.
+receive data: from server read complete.
+client finish.
+
+
+服务端模拟接受数据
+$ ./server.o 
+listening...
+waiting for new socket accept.
+waiting for new socket accept.
+newclient sock fd: 4
+receive data: 00000088
+data size: 00000088, value:88
+receive data: This i
+receive data: s a te
+receive data: st cas
+receive data: e for
+receive data: client
+receive data: send
+receive data: subpac
+receive data: kage d
+receive data: ata. d
+receive data: ata is
+receive data: not s
+receive data: end co
+receive data: mplete
+receive data: at on
+receive data: ce.
+data size: 88, text: This is a test case for client send subpackage data. data is not send complete at once.
+receive data: 00000007
+data size: 00000007, value:7
+receive data: Hello
+data size: 7, text: Hello
+receive data: 00000011
+data size: 00000011, value:11
+receive data: I'm lucky.
+data size: 11, text: I'm lucky.
+receive data: 00000016
+data size: 00000016, value:16
+receive data: Nice too me you
+data size: 16, text: Nice too me you
+receive data: 00000005
+data size: 00000005, value:5
+receive data: exit
+data size: 5, text: exit
+newclient sockfd: 4, finish.
